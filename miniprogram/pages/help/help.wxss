@@ -1,0 +1,19 @@
+/* miniprogram/pages/help/help.wxss */
+#title{
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 50rpx;
+}
+.warn,#help strong{
+  color: orangered;
+}
+#code{
+  height: 300rpx;
+  width: 300rpx;
+  margin: 0 auto;
+}
+#set{  
+  height: 225rpx;
+  width: 750rpx; 
+  margin-bottom: 50rpx;
+}

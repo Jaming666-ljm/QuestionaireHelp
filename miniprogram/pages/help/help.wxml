@@ -1,0 +1,6 @@
+<!--miniprogram/pages/help/help.wxml-->
+<rich-text id='title'>问卷或考试提交后跳转</rich-text>
+<rich-text id='help'>  由于问卷星小程序中，打开问卷也是通过H5的方式打开，提交答卷后无法顺畅的跳转回之前的小程序或页面。所以如果您想要参与者提交答卷后跳转到指定的页面或小程序，可以在<strong>设计问卷》问卷设置》跳转设置</strong>，显示感谢信息中，添加指定页面的二维码或小程序码，并引导用户长按识别二维码做下一步的操作。</rich-text>
+<image src="./questionset.png" id="set"></image>
+<text class='warn'>请将本小程序码保存后根据上述操作设置感谢信息,否则助问小程序将无法统计已填写问卷的人数!</text>
+<image src="./appbinimg.png" id="code" data-url="./appbinimg.png" bindlongtap="saveImg"></image>

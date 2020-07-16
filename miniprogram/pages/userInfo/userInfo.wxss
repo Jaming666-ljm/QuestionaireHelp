@@ -1,0 +1,79 @@
+/* miniprogram/pages/userInfo/userInfo.wxss */
+.user{
+  background-color: rgba(59,118, 245,0.7);
+  height: 400rpx;
+  border-radius: 5px;
+  position: relative;
+  color: whitesmoke;
+}
+#qnum strong{
+  color: orange;
+}
+.user image{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  box-shadow:3rpx 3rpx rgba(0, 0, 0, 0.2);
+}
+.help{
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx;
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 35rpx;
+  box-shadow:6rpx 8rpx 6rpx 0 rgba(0, 0,0, 0.1),
+  -2rpx -1rpx 3rpx 0 rgba(0, 0,0, 0.1);
+  padding: 10rpx auto;
+}
+#tohelp{
+  color: orangered;
+}
+.help .tapshow{
+  transform: rotate(180deg);
+}
+.questionaire{
+  border: 1px solid gray;
+  box-shadow:6rpx 8rpx 6rpx 0 rgba(0, 0,0, 0.1),
+            -2rpx -1rpx 3rpx 0 rgba(0, 0,0, 0.1);
+  border-radius: 5px;
+  margin:  5px 3% 10px 3%;
+  font-size: 35rpx;
+}
+.titlekey{
+  display: flex;
+  justify-content: space-between;
+}
+.qtitle{
+  font-weight: bolder;
+}
+.keyword{
+  color: red;
+  font-size: 28rpx;
+}
+.qhelp{
+  color: gray;
+  font-size: 28rpx;
+  margin-left: 2px;
+}
+#qnum,#username{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#qnum{
+  bottom: 0;
+}
+#userimg{
+  display: block;
+  margin:0 auto;
+  margin-top: 10%;
+}
+#getui{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid gray;
+  color: gainsboro;
+}

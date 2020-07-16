@@ -1,0 +1,45 @@
+ <!--pages/homePage/homePage.wxml-->
+<view class="header">
+  <label for="chosebox" bindtap="showchosebox">
+  <!-- {{}} -->
+    {{query.order}} <view>▲</view>
+  </label>
+  <view class="searchBar">
+    <icon class="icon-search" type="search" size="20px"></icon>
+    <input type="text" confirm-type="search" placeholder="请输入搜索关键字" bindconfirm="getdataBykeyword"></input>
+  </view>
+  <form class="choseBox" id="chosebox" hidden="{{showchose}}" catchsubmit="formsubmit">
+    <radio-group name="order">
+      <radio value="最新" checked='true'>发布最新</radio>
+      <radio value="最多">填写最多</radio>
+    </radio-group>
+    <radio-group name="side">
+      <radio value="校外">校外</radio>
+      <radio value="校内"  checked='true'>校内</radio>
+    </radio-group>
+    <radio-group name="class">
+      <radio value="行为调查" checked="true">行为调查</radio>
+      <radio value="心理/感官调查">心理/感官调查</radio>
+      <radio value="意见反馈">意见反馈</radio>
+    </radio-group>
+    
+    <button form-type="submit" type="primary" size="mini">确定</button>
+  </form>
+  
+</view>
+<view class="qblock" wx:for="{{questionaires}}" bindtap="Toquestion" data-url="{{item.path}}">
+  <view class="titlekey">
+    <view class="qtitle">{{item.title}}</view>
+    <view class="keyword">{{item.keyword}}</view>
+  </view>
+  <view class="qhelp">{{item.introduction}}</view>
+</view>
+<view class="qblock" >
+  <view class="titlekey">
+    <view class="qtitle">问卷标题</view>
+    <view class="keyword">关键字</view>
+  </view>
+  <view class="qhelp">简介</view>
+</view>
+
+

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/addQ/addQ",
+    "pages/userInfo/userInfo",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F9F9F9",
+    "navigationBarTitleText": "助问",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "backgroundColor": "#f9f9f9",
+    "selctedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "主页",
+        "iconPath":"images/home.jpg",
+        "selectedIconPath":"images/home1.jpg"
+      },
+      {
+        "pagePath": "pages/addQ/addQ",
+        "text": "添加问卷",
+        "iconPath":"images/add.jpg",
+        "selectedIconPath":"images/add1.jpg"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "个人中心",
+        "iconPath":"images/user.jpg",
+        "selectedIconPath":"images/user1.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

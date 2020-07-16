@@ -1,0 +1,26 @@
+<!--miniprogram/pages/userInfo/userInfo.wxml-->
+
+<view class="user">
+  <block wx:if="{{islogin}}"><image id="userimg" src='{{imgurl}}'></image>
+  <text id="username">{{name}}</text>
+  <rich-text id="qnum">您已填写<strong>{{questionNum}}</strong>份问卷</rich-text></block>
+  <button wx:else open-type="getUserInfo" id="getui" size="mini" bindgetuserinfo="ongetuserinfo">登录</button>
+</view>
+<view class="help" bindtap="tohelp">
+  <text>发布前必做</text>
+  <text id="tohelp">></text>
+</view>
+<view class="myQ">
+  <view class="help">
+    <text>我的问卷</text>
+    <text class="tapshow">▲</text>
+  </view>
+  
+  <view class="questionaire" wx:for="{{userquestions}}"bindtap="Toquesion" data-url="{{item.url}}">
+  <view class="titlekey">
+    <view class="qtitle">{{item.title}}</view>
+    <view class="keyword">{{item.keyword}}</view>
+  </view>
+  <view class="qhelp">{{item.introduction}}</view>
+</view>
+</view>

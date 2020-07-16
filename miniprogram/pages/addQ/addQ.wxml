@@ -1,0 +1,41 @@
+<!--miniprogram/pages/addQ/addQ.wxml-->
+<form catchsubmit='addQ' catchsubmit='formsubmit'>
+  <view class="inedit">
+    <label>标题</label>
+    <input type="text" placeholder="请输入问卷标题" name="title" value="{{qtitle}}"></input>
+  </view>
+  <view class="inedit">
+    <label>关键词</label>
+    <input type="text" placeholder="请输入问卷关键词(或课程名称)" name='keyword' value="{{qkey}}"></input>
+  </view>
+  
+  
+  <view class="inedit">
+    <label>网址</label>
+    <input type="text" placeholder="上传问卷网址" name='url' value="{{qurl}}"></input>
+  </view>
+  <view class="inedit" id='chosebox'>
+    <label>问卷分类</label>
+    <radio-group name="side">
+      <radio value="校外">校外</radio>
+      <radio value="校内"  checked='true'>校内</radio>
+    </radio-group>
+    <radio-group name="class">
+      <radio value="行为调查" checked="true">行为调查</radio>
+      <radio value="心理/感官调查">心理/感官调查</radio>
+      <radio value="意见反馈">意见反馈</radio>
+    </radio-group>
+    </view>
+  <view class="inedit" id="bottom">
+    <textarea placeholder="请输入问卷简介" name='introduction' value="{{qintroduction}}"></textarea>
+  </view>
+
+  
+  
+  
+  <!-- <button>上传简介附图</button> -->
+  
+  <button bindtap="choseimg" wx:if="{{!binurl}}" id="choseimg">上传二维码</button>
+  <image wx:else src="{{binurl}}"></image>
+  <button form-type="submit" class="submit">保存</button>
+</form>

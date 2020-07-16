@@ -1,0 +1,48 @@
+/* miniprogram/pages/addQ/addQ.wxss */
+.inedit{
+  border-top: 1px solid gray;
+  padding: 10rpx auto;
+}
+.inedit label,input{
+  margin: 2rpx auto;
+}
+.inedit label{
+  font-weight: bold;
+}
+.inedit input{
+  font-size: small;
+}
+.inedit textarea{
+  height: 200rpx;
+}
+.submit{
+  background-color: #66a2da;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0px;
+}
+button{
+  border: 1px solid gray;
+  background-color: white;
+}
+image{
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+  margin:30rpx auto;
+  box-shadow:6rpx 8rpx 6rpx 0 rgba(0, 0,0, 0.1),
+            -2rpx -1rpx 3rpx 0 rgba(0, 0,0, 0.1);
+}
+radio-group{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rpx;
+}
+#bottom{
+  box-shadow:6rpx 8rpx 6rpx 0 rgba(0, 0,0, 0.1),
+            -2rpx -1rpx 3rpx 0 rgba(0, 0,0, 0.1);
+}
+#choseimg{
+  margin-top: 30rpx;
+}
